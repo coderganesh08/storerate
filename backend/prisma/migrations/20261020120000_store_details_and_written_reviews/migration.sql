@@ -1,0 +1,13 @@
+ALTER TABLE "Store"
+  ADD COLUMN "category" VARCHAR(80),
+  ADD COLUMN "city" VARCHAR(100),
+  ADD COLUMN "state" VARCHAR(100),
+  ADD COLUMN "postalCode" VARCHAR(20),
+  ADD COLUMN "phone" VARCHAR(32),
+  ADD COLUMN "website" VARCHAR(2048),
+  ADD COLUMN "description" VARCHAR(2000),
+  ADD COLUMN "openingHours" VARCHAR(1000),
+  ADD COLUMN "isOpen" BOOLEAN;
+
+ALTER TABLE "Rating"
+  ADD COLUMN "review" VARCHAR(1000);
